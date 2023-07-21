@@ -10,10 +10,12 @@
 <p>  utilize $()  onde ele pode receber funçoes e seletores $('div') onde ele vai selecionar as div</p>
 </div>
 
-<div>
-   // ...
+<p style="font-size:18px;"> basic jquery 
+</p>
 
-     
+<div>
+        
+        // ...
         $('div')
         .hide(500)  // funcao esconde
         .show(5000)  // função mostrar
@@ -37,7 +39,7 @@
                 ))
 </div>
 <div>
-<p> Jquery Css</p>
+<p style="font-size:18px;"> função:</p>
 
        // criando uma funcao p/ mudar fundo do body
         ========== funcao ==================
@@ -59,7 +61,66 @@
                 .hide(1000)
 
 </div>
-<div></div>
-<div></div>
+<div>
+
+<p style="font-size:18px;"> Seletores :</p>
+
+
+              // ...
+        /*   seletor id */
+        $('#feira') // # = pegando seletor id
+        .addClass('destaque') // adicionar clase
+        .removeClass('destaque') // ira remover a classe
+
+        /* peganado seletor li */
+        $('li')
+        .addClass('destaque') 
+
+        /* pegando atributo */
+        $('[wm-obrigatorio]')
+        .removeClass('destaque') 
+        // vai remover class destaque do atributo
+        
+        /*  pegando a classe*/
+        $('li.opcional')
+        .removeClass('destaque')
+
+        /* referenciando  */
+        $('div p span').addClass('destaque')
+
+        /*  Exclusivo do JQuery */
+        //primeiro elemento li
+        $('li:first') 
+        .css('border','solid 2px yellow') //adiciona atributo css
+        
+        /*  oddd são os impares */
+        $('li:odd')
+        .css('border','solid 10px orange')
+
+        /* gt(1) */
+        $('li:gt(1)')
+        css('border','solid 10px white')
+
+        /* :not(:last)  ultimo */
+        $('li:not(:last)').css('border','none')
+
+        /* contains  utilizado para  ver se tem determinada letra */
+        $('li:contains("r")').css('background-color','black')
+</div>
+<div>
+<p style="font-size:18px;"> formulario </p>
+
+            /* formulario: */
+
+        $('form *') // formulario * seleciona tudo
+        .hide() //escondido
+
+        $('form :text') //:text e filtro
+        $('form :password').show()
+        $('form :checkbox').show()
+        $('form :radio').show()
+        $('form :file').show()
+
+</div>
 <div></div>
 </section>
