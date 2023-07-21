@@ -15,5 +15,41 @@
 
     <script>
         // ...
+
+        $('div')
+        .hide(500)
+        .show(5000)
+        .fadeOut(5000)  
+        console.log(
+            $('div')
+    // ele vai me da de fato elemento dom q esta 
+    // assosiado ao seletor
+            .get(0) 
+        )
+        console.log(
+            $.isEmptyObject({
+               // aqui a gente passs obj p/ verificar 
+            })
+            )
+
+            console.log(
+                $ 
+                .inArray(3,// verifico um determinado numero de array
+                [1,2,3]
+                ))
+                // criando uma funcao
+            $.fn.fundoVerde = function (){
+                
+                //colocar propriedade css
+                this.css(
+                    // propriedade e valor 
+                    'background-color','green'
+                    // igual background-color:green
+                    )
+                }
+                    
+                    /*  aplicando: */
+                $('body') // seleciono elemento
+                .fundoVerde() // passo função
     </script>
 </body>
