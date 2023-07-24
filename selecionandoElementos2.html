@@ -82,5 +82,53 @@
     </footer>
     <script>
         // ...
+
+    const comBorda = { 'boder':'solid 8px orange'}
+    const semBorda = { 'boder':'none'}
+
+    // exemplo:
+    $('a[href="#link3"]')
+    .parent()
+    .css(comBorda) // vai adicionar
+    .css(semBorda) //remover
+    // exemplo:
+    $('li:last')
+    .prev() // p/ voltar
+    .css(comBorda)
+    .css(semBorda)
+    // exemplo:
+    $('a[href="#link3"]')
+    .parent() // parents
+    .next() // proximo
+    .css(comBorda)
+    .css(semBorda)
+    // exemplo:
+    $('a[href="#link1"]')
+    .parents() // ele vai pega todos parents
+    .css(comBorda)
+    .css(semBorda)
+    //exemplo
+    $('a[href="#link1"]')
+    .parentsUntil(
+        // ele vai pega todos parents pai
+        $('body')
+        ) 
+    .css(comBorda)
+    .css(semBorda)
+        /* children */
+        $('main').children().css(comBorda)
+        /* find */
+        $('body').find('a').css(comBorda)
+        /*  exemplo 2 */
+
+        const elementDom = document.getElementByClassName('menu')
+        $(elementDom).css(comBorda)
+        $('main').cchildren().earch((
+            i, // indice
+            e  // elemento
+             ) => $(e).css(comBorda))
+
+             
     </script>
+
 </body>
